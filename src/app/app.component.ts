@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angularApp';
+
+  path:string="";
+
+  setRoute($event:string){
+    this.path=$event
+  }
 }

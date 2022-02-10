@@ -1,6 +1,6 @@
 <div class="container-fluid">
-  <app-header></app-header>
-  <app-recipe></app-recipe>
-  <app-shopping-list></app-shopping-list>
+  <app-header (event)="setRoute($event)"></app-header>
+  <app-recipe *ngIf= "path === 'Recipes' "> </app-recipe>
+  <app-shopping-list *ngIf= "path === 'Shopping-List' "> </app-shopping-list>
 </div>
 
